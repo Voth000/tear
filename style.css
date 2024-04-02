@@ -1,0 +1,205 @@
+
+
+@font-face {
+    font-family: 's1';
+    src: url("./Crozet-Regular.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 's2';
+    src: url("./JosefinSlab-Italic-VariableFont_wght.ttf") format('truetype');
+  }
+  
+  @font-face {
+    font-family: 's3';
+    src: url("./PTMono-Regular.ttf") format('truetype');
+  }
+  
+
+@font-face {
+    font-family: 's4';
+    src: url("./JosefinSlab-VariableFont_wght.ttf") format('truetype');
+}
+
+
+button, input {
+
+    font-family: 's3' ; 
+    display: inline-block;
+    padding: 12px 16px;
+    background-color: #ffffffa2;
+    border-radius: 60%;
+    border: none;
+ font-size: 14px;
+    cursor: pointer;
+    backdrop-filter: blur(4px);
+    background-blend-mode: difference;
+    box-shadow: 2px 2px 1px 0px rgb(239, 239, 239);
+    outline: #e8e9e9c5 1px solid;
+    color: black;
+}
+
+
+/* Hide the default file input */
+.file-upload input[type="file"] {
+    display: none;
+  }
+  
+  /* Style the custom file upload button */
+  .file-upload label, button {
+    filter: brightness(1.2);
+    font-family: 's3' ; 
+    display: inline-block;
+    padding: 12px 16px;
+    background-color: #ffffffa2;
+    color: #fff;
+    border-radius: 60%;
+    border: none;
+ font-size: 14px;
+    cursor: pointer;
+    backdrop-filter: blur(4px);
+    background-blend-mode: difference;
+    box-shadow: 2px 2px 1px 0px rgb(239, 239, 239);
+    outline: #e8e9e9c5 1px solid;
+    color: black;
+  }
+  
+  /* Optionally style the button on hover or focus */
+  .file-upload label:hover,
+  .file-upload label:focus,
+  button:hover {
+    background-color: #8f8f8f;
+    color: #fff;
+  }
+
+#canvas1 {
+    top: 0;
+    left: 0;
+    width: 100vw; /* Use viewport width */
+    height: 100vh; /* Use viewport height */
+    position: absolute;
+    z-index: 1;
+     /* Use viewport height with a fixed value */
+    object-fit: contain;
+    
+}
+
+#control {
+    position: absolute;
+    z-index: 2;
+}
+
+#message-input {
+    font-family: 's4';
+    resize: none; /* Prevent resizing of the textarea */
+    width: 100%; /* Make the textarea fill its parent container */
+    height: 40vh; /* Automatically adjust height to fit content */
+    overflow-y: auto; /* Add vertical scrollbar if needed */
+    background-color: #dededec1;
+    filter: brightness(1.1);
+    border: none;
+ font-size: 18px;
+    cursor: pointer;
+    backdrop-filter: blur(2px);
+    background-blend-mode: difference;
+    box-shadow: 2px 2px 2px 2px rgb(237, 237, 237);
+
+    color: black;
+}
+
+
+#message-input:focus {
+   outline: #8f8f8f 1px solid;
+}
+
+.dynamic-message {
+    display: none; /* Hide dynamically created messages */
+}
+div#message-container {
+    display: flex;
+    /* max-width: 80%; */
+   /* Set width to 100% to fill the entire viewport width */
+    height: 20vh;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 0;
+
+    
+}
+
+body, html {
+    font-family: 's2', serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #00000000;
+  }
+  
+
+  canvas#defaultCanvas0 {
+    top: 0;
+    left: 0;
+    width: 100vw; /* Use viewport width */
+    height: 100vh; /* Use viewport height */
+    position: absolute;
+border-radius: 50%;
+box-shadow: inset rgba(60, 70, 85, 0.5) 0px 0px 40px 0px, inset rgba(60, 70, 85, 0.5) 0px 0px 40px 0px, inset rgba(0, 0, 0, 1) 0px 0px 36px -24px;
+     /* Use viewport height with a fixed value */
+    object-fit: contain;/* Ensure the video/image covers the canvas entirely */
+  }
+  
+  #popup-container-1 {
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    
+    z-index: 9999;
+}
+
+#popup-container-2 {
+    margin: 2em;
+    position: absolute;
+    top: 40%;
+    right: 30px;
+    max-width: 30%;
+    z-index: 9998;
+}
+
+#popup {
+    box-shadow: inset rgba(60, 70, 85, 0.5) 0px 0px 40px 0px, inset rgba(60, 70, 85, 0.5) 0px 0px 40px 0px, inset rgba(0, 0, 0, 1) 0px 0px 36px -24px;
+    border: none;
+ font-size: 14px;
+    cursor: pointer;
+    background-color: #dededec1;
+    
+    border: none;
+ font-size: 1.1em;
+    cursor: pointer;
+    backdrop-filter: blur(2px);
+    background-blend-mode: difference;
+    box-shadow: 2px 4px 2px 2px rgb(255, 255, 255);
+    color: black;
+  
+    padding: 20px;
+    font-family: serif;
+    font-family: 's2', serif;
+
+}
+
+#close-btn {
+    color: #8f8f8f;
+    line-height: 1px;
+    cursor: pointer;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 's1', sans-serif;
+}
+
+#popup p {
+    margin: 0;
+}
+ 

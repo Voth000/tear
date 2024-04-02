@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Letitout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="p5.js CDN Template">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    
+    <script src="sketch.js" defer></script>
+    <link rel="stylesheet" href="style.css"> <!-- Link the CSS file -->
+  </head>
+  <body>
+    <header>
+    </header>
+    <div id="control">
+      <textarea id="message-input" placeholder="Let it all out...."></textarea>
+      <div class="glitchButton" style="position: fixed; top: 20px; right: 20px;"></div>
+      <div class="file-upload">
+        <input type="file" id="fileInput" accept="image/*">
+        <label for="fileInput">Change your mood</label>
+      </div>
+      <video id="videoElement" style="display: none;"></video>
+      <button id="switchToWebcam">Be with yourself</button>
+<button id="clear-canvas">Star over</button>
+
+<div id="buttonContainer">
+  <button id="saveButton">Capture this moment</button>
+</div>
+
+<button id="colorButton">Change Text Color</button>
+
+    </div>
+    <div id="popup-container-1">
+      <div id="popup" class="p1">
+          <span id="close-btn">&times;</span>
+          <p>Hey! Welcome to Tear, <br>
+            The place where you can finally let loose those emotions you've been holding in. <br>
+            It's your safe haven to jot down those feelings that are hard to express verbally. <br>
+            Whether it's a note to yourself or a heartfelt letter to someone special, <br>
+            Tear is here to support you. <br>
+            So grab a tissue, let those tears flow, and let's start writing or scribbling away!
+          </p>
+      </div>
+  </div>
+  <div id="popup-container-2">
+    <div id="popup" class="p2">
+        <span id="close-btn">&times;</span>
+        <p>
+          [Hold Shift+S to take a screenshot] <br>
+         
+        </p>
+    </div>
+</div>
+    
+    <canvas id="canvas1"></canvas>
+
+    
+
+<script src="https://button.glitch.me/button.js" data-style="glitch"></script>
+<script src="script.js"></script>
+  </body>
+</html>
