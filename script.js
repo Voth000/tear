@@ -260,3 +260,13 @@ $(document).ready(function() {
       $('#popup-container-2').hide();
   });
 });
+
+$(document).ready(function() {
+    // Make the popup draggable
+    $('#popup-container-3').draggable();
+  
+    // Close the popup when clicking on the close button
+    $('#close-btn').click(function() {
+        $('#popup-container-3').hide();
+    });
+  });
