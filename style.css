@@ -23,20 +23,25 @@
 
 
 button, input {
+    box-shadow: rgb(255, 255, 255) 0px 0px 24px 0px inset, rgb(255, 255, 255) 0px 0px 14px 0px inset, rgb(255, 255, 255) 0px 0px 10px -24px inset;
 
-    font-family: 's3' ; 
+    font-family: 's2' ; 
     display: inline-block;
     padding: 12px 16px;
-    background-color: #ffffffa2;
+ 
     border-radius: 60%;
-    border: none;
+  
  font-size: 14px;
     cursor: pointer;
     backdrop-filter: blur(4px);
     background-blend-mode: difference;
-    box-shadow: 2px 2px 1px 0px rgb(239, 239, 239);
-    outline: #e8e9e9c5 1px solid;
-    color: black;
+    background-color: #abb6ff;
+    border: #e8e9e9c5 1px solid;
+    
+}
+
+input {
+    color:  rgba(19, 74, 212, 0.55);;
 }
 
 
@@ -51,16 +56,16 @@ button, input {
     font-family: 's3' ; 
     display: inline-block;
     padding: 12px 16px;
-    background-color: #ffffffa2;
+    background-color: #8e8e8e;
     color: #fff;
     border-radius: 60%;
-    border: none;
+  
  font-size: 14px;
     cursor: pointer;
     backdrop-filter: blur(4px);
     background-blend-mode: difference;
-    box-shadow: 2px 2px 1px 0px rgb(239, 239, 239);
-    outline: #e8e9e9c5 1px solid;
+    box-shadow: rgb(255, 255, 255) 0px 0px 24px 0px inset, rgb(255, 255, 255) 0px 0px 14px 0px inset, rgb(255, 255, 255) 0px 0px 10px -24px inset;
+    border: #e8e9e9c5 1px solid;
     color: black;
   }
   
@@ -68,8 +73,10 @@ button, input {
   .file-upload label:hover,
   .file-upload label:focus,
   button:hover {
-    background-color: #8f8f8f;
-    color: #fff;
+    background-color: #d2d2d2;
+    color: #002ae8;
+    box-shadow: 4px 4px 4px 0px rgb(148, 167, 237);
+
   }
 
 #canvas1 {
@@ -90,26 +97,32 @@ button, input {
 }
 
 #message-input {
-    font-family: 's4';
-    resize: none; /* Prevent resizing of the textarea */
-    width: 100%; /* Make the textarea fill its parent container */
-    height: 40vh; /* Automatically adjust height to fit content */
-    overflow-y: auto; /* Add vertical scrollbar if needed */
-    background-color: #dededec1;
+   
+    font-family: 's2';
+    resize: none;
+    width: 100%;
+    height: 40vh;
+    overflow-y: auto;
+    background-color: #e5e5e5c1;
     filter: brightness(1.1);
     border: none;
- font-size: 18px;
+    font-size: 24px;
     cursor: pointer;
     backdrop-filter: blur(2px);
-    background-blend-mode: difference;
-    box-shadow: 2px 2px 2px 2px rgb(237, 237, 237);
-
-    color: black;
+    box-shadow: 4px 4px 4px 0px rgb(148, 167, 237);
+    color: rgb(17 0 148);
+}
+b {
+    color: rgb(65, 40, 255); 
 }
 
-
 #message-input:focus {
-   outline: #8f8f8f 1px solid;
+   outline: #ffffff 1px solid;
+   background-color: rgba(180, 195, 251, 0.775);
+   box-shadow: 4px 4px 4px 0px rgb(255, 255, 255);
+
+   color: rgb(255, 255, 255);
+
 }
 
 .dynamic-message {
@@ -129,6 +142,8 @@ div#message-container {
 }
 
 body, html {
+    background-image: url(bg2.jpg);
+    background-size: contain;
     font-family: 's2', serif;
     margin: 0;
     padding: 0;
@@ -146,8 +161,8 @@ body, html {
     height: 100vh; /* Use viewport height */
     position: absolute;
 border-radius: 50%;
-box-shadow: inset rgba(60, 70, 85, 0.5) 0px 0px 40px 0px, inset rgba(60, 70, 85, 0.5) 0px 0px 40px 0px, inset rgba(0, 0, 0, 1) 0px 0px 36px -24px;
-     /* Use viewport height with a fixed value */
+box-shadow: 4px 4px 4px 0px rgb(158, 186, 251);
+/* Use viewport height with a fixed value */
     object-fit: contain;/* Ensure the video/image covers the canvas entirely */
   }
   
@@ -177,20 +192,30 @@ box-shadow: inset rgba(60, 70, 85, 0.5) 0px 0px 40px 0px, inset rgba(60, 70, 85,
     z-index: 9999;
 }
 
+#popup-container-4 {
+    margin: 2em;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    max-width: 30%;
+    z-index: 9999;
+}
+
 
 #popup {
-    box-shadow: inset rgba(60, 70, 85, 0.5) 0px 0px 40px 0px, inset rgba(60, 70, 85, 0.5) 0px 0px 40px 0px, inset rgba(0, 0, 0, 1) 0px 0px 36px -24px;
+    box-shadow: inset rgb(255, 255, 255) 0px 0px 40px 0px, inset rgb(255, 255, 255) 0px 0px 40px 0px, inset rgb(255, 255, 255) 0px 0px 36px -24px;
+    
     border: none;
  font-size: 14px;
     cursor: pointer;
-    background-color: #dededec1;
+    background-color: #949494;
     
     border: none;
  font-size: 1.1em;
     cursor: pointer;
     backdrop-filter: blur(2px);
-    background-blend-mode: difference;
-    box-shadow: 2px 4px 2px 2px rgb(255, 255, 255);
+   
+   
     color: black;
   
     padding: 20px;
@@ -199,8 +224,8 @@ box-shadow: inset rgba(60, 70, 85, 0.5) 0px 0px 40px 0px, inset rgba(60, 70, 85,
 
 }
 
-#close-btn {
-    color: #8f8f8f;
+.close {
+    color: #000000;
     line-height: 1px;
     cursor: pointer;
     float: right;
@@ -212,4 +237,43 @@ box-shadow: inset rgba(60, 70, 85, 0.5) 0px 0px 40px 0px, inset rgba(60, 70, 85,
 #popup p {
     margin: 0;
 }
+
+#popup:hover {
+    box-shadow: 4px 4px 4px 0px rgb(147, 167, 254) !important;
+    background-color: white !important;
+}
  
+#popup.p1 {
+    background-color: #737efa;
+   
+    background-image: url(bg2.jpg);
+    background-blend-mode: xor;
+    background-size:cover;
+    box-shadow: 4px 4px 4px 0px rgb(255, 255, 255);
+    color: rgb(15, 15, 15);
+
+backdrop-filter: blur(12px);
+ 
+}
+#popup.p4 {
+    background-color: #737efa;
+   
+    background-image: url(bg.jpg);
+    background-blend-mode: xor;
+    background-size:cover;
+    box-shadow: 4px 4px 4px 0px rgb(155, 175, 255);
+    color: rgb(139, 139, 139);
+
+backdrop-filter: blur(12px);
+ 
+}
+
+#popup.p4:hover {
+    box-shadow: 4px 4px 4px 0px rgb(255, 255, 255) !important;
+    color: rgb(255, 255, 255) !important;
+
+}
+
+textarea {
+    color: #ff0000;
+} 

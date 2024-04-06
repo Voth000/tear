@@ -76,13 +76,19 @@ document.getElementById('message-input').addEventListener('input', debouncedWrit
 
 document.getElementById('message-input').addEventListener('input', writeMessage);
 
-let textColor = '#000'; 
+let textColor = '#002ae8'; // Initial text color
+const colors = ['#002ae8', '#fff', '#000']; // Array of colors
+
 
 const colorButton = document.getElementById('colorButton');
 colorButton.addEventListener('click', changeTextColor);
 
+let colorIndex = 0; // Index to track current color
+
+
 function changeTextColor() {
-    textColor = textColor === '#000' ? '#fff' : '#000'; 
+    colorIndex = (colorIndex + 1) % colors.length;
+    textColor = colors[colorIndex];
     drawMessage(document.getElementById('message-input').value);
 }
 
@@ -245,7 +251,7 @@ $(document).ready(function() {
   $('#popup-container-1').draggable();
 
   // Close the popup when clicking on the close button
-  $('#close-btn').click(function() {
+  $('#close-btn-1').click(function() {
       $('#popup-container-1').hide();
   });
 });
@@ -256,7 +262,7 @@ $(document).ready(function() {
   $('#popup-container-2').draggable();
 
   // Close the popup when clicking on the close button
-  $('#close-btn').click(function() {
+  $('#close-btn-2').click(function() {
       $('#popup-container-2').hide();
   });
 });
@@ -266,7 +272,17 @@ $(document).ready(function() {
     $('#popup-container-3').draggable();
   
     // Close the popup when clicking on the close button
-    $('#close-btn').click(function() {
+    $('#close-btn-3').click(function() {
         $('#popup-container-3').hide();
+    });
+  });
+
+  $(document).ready(function() {
+    // Make the popup draggable
+    $('#popup-container-4').draggable();
+  
+    // Close the popup when clicking on the close button
+    $('#close-btn-4').click(function() {
+        $('#popup-container-4').hide();
     });
   });
